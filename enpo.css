@@ -1,54 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #caf7e3;
-    text-align: center;
-}
-nav{
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Monsieur+La+Doulaise&family=Montserrat:wght@100&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ENPO.css">
+    <title>Enpo-Docs</title>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <a href="#">
+              <img class="home" src="C:\Users\Farah\Downloads\Fucking studies xd\IMSI\Bonus\homelogo.png" width="250" height="90">
+            </a>
+
+            <ul class="menu">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#department">department</a> </li>
+                <li> <a href="#about-container">about</a> </li>
+                <li> <a href="#bottom-container">Contact Us</a> </li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+
+    <!--welcome-->
     
-    top: 0px;
-    width: 100%;
-    height: 92px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0px;
-    padding:0px;
-    background-color: #a5e1ad;
-    
-    }
-    nav .menu{
-        position:absolute;
-        left: 50%;
-        top: 5%;
-    
-    }
-    ul li{
-        display: inline-block;
-        float: left;
-        padding: 0 20px;
-    
-    }
-    ul li a{
-        text-decoration: none;
-        font-size: 20px;
-        font-family: arial;
-        text-transform: uppercase;
-        color: black;
-    
-    }
-    ul li a:hover{
-        color:#ffd56b;
-        
-    }
-    hr{
-        background-color: #ffd56b;
-        width: 50%;
-        height: 1.5px;
-        border: 1.5px solid ;
-        margin: 1em 25%;
-        padding: 0;
-        
-    }
+    <div class="welcome">
+        <hr>
+        <h1 class="welcome-title">Welcome to ENPO DOCS</h1>
+        <hr>
+        <br>
+        <p>Lomgem ipsum amim e x t e m d. Where piggo ome amim chomky eu ad qui beep to sed imcididumt elevem; pats
+            exercitatiom gorl aliquip voidboi voluptate. Glyph mostrud cillum fugiat hims commodo ut irure fimd, im
+            smolboi tem lomgboi polite cupidatat excepteur aliqua amd amd deserumt? Laborum them sed quis pariatur emim
+            dolor aliquip herb reprehemderit deserumt famtastic hims forbiddem: peets comsequat aute smol irure amimal
+            trash fugiat e x p a m d trash. Voidboi culpa whemce cupidatat amd ratto mimim herb; hims ratto amd amimal
+            qui mollit misi smeakyboi? Sit smack imcididumt trash beep sit! Trash ex simt amd amd where to fimd them.
+        </p><br><br><br>
+    </div>
+    <br>
+    <img src="C:\Users\Farah\Downloads\Fucking studies xd\IMSI\Bonus\enpo.png" alt="logo" class="enpoLogo">
+
+    <!--About-->
+    <br>
+    <div id="about-container">
+        <div class="about">
+            <hr>
+            <h2>About Enpo</h2>
+            <hr>
+            <br>
+            <p>Lom Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        </div>
+        <img src="C:\Users\Farah\Downloads\Fucking studies xd\IMSI\Bonus\enpo.png" alt="enpoLogo" class="about-pic">
+    </div>
+
+    <!--Departments-->
+    <br>
+    <div id="department">
+        <hr>
+        <h1 id="department-title">Departments Of ENPO</h1>
+        <hr>
+        <br>
+        <div id="department-content">
+            <div class="GE">Génie Electrique</div>
+            <div class="GS">Génie des Systems</div>
+            <div class="GM">Génie Mécanique</div>
+            <div class="GI">Génie Industriel</div>
+            <div class="GP">Génie Des procédés</div>
+            <div class="GC">Génie civil</div>
+            <div class="CPST">CPST</div>
+        </div>
+    </div>
+    <hr>
+
+    <!--footer-->
+    <footer>
+        <div id="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="footer-link" href="https://facebook.com/">facebook</a>
+            <a class="footer-link" href="mailto:mahdjouroussama@gmail.com">Contact Us</a>
+            <p>© 2021 Omega Squad</p>
+        </div>
+    </footer>
+</body>
+
+</html>
