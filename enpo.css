@@ -29,7 +29,6 @@ nav{
         display: inline-block;
         float: left;
         padding: 0 20px;
-        
     
     }
     ul li a{
@@ -42,5 +41,14 @@ nav{
     }
     ul li a:hover{
         color:#ffd56b;
+        
+    }
+    hr{
+        background-color: #ffd56b;
+        width: 50%;
+        height: 1.5px;
+        border: 1.5px solid ;
+        margin: 1em 25%;
+        padding: 0;
         
     }
