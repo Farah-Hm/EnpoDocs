@@ -36,7 +36,7 @@ hr{
   max-width: 720px;
   background-color: #72aaa4;
         width: 55%;
-        height: 5px;
+        height: 2px;
         border: 1.5px solid ;
 
         padding: -20px;
@@ -135,6 +135,10 @@ hr{
 .about-pic{
   margin: 5px;
   border: 3px solid black;
+}
+#about-container{
+  max-width: 1400px;
+  min-width: 450px;
 }
 
 #about-container p {
