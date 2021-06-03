@@ -5,11 +5,6 @@ body {
   text-align: center;
   background-color: white;
 }
-h1 {
-  line-height: 2;
-  font-weight: normal;
-  font-family: 'Sacramento', cursive;
-}
 a {
   text-align: center;
   display: block;
@@ -50,10 +45,11 @@ hr{
 }
 .first{
   color: white;
-  background-image: url("../pics/wp1.jpg");
+  background-image: url("../pics/welcome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0px;
+  
 }
 .big-nav-container{
 
@@ -122,7 +118,7 @@ hr{
 
 .welcome {
   max-width: 1440px;
-  padding: 8%;
+  padding: 18%;
 }
 
 .welcome-title {
