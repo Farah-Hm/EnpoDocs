@@ -1,66 +1,327 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Monsieur+La+Doulaise&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index-style.css">
-    <title>Enpo-Docs</title>
-  </head>
-  <body>
-  <div class="body">
-    <div class="first">
-      <header class="big-nav-container">
-        <nav class="nav" >
-          <a href="#" ><h4 id="nav-bar-title">Enpo Docs </h4>  </a>
-          <div class="navigation-bar">
-            <a href="#" class="navigation-items"><h4 class="nav-text">Home</h4> </a>
-            <a href="#department"class="navigation-items"><h4 class="nav-text">departments</h4> </a>
-            <a href="#about-container"class="navigation-items"><h4 class="nav-text">about</h4> </a>
-            <a href="mailto:mahdjouroussama@gmail.com" class="navigation-items"><h4 class="nav-text">FeedBack</h4></a>
-          </div>
-        </nav>
-      </header>
-      <div class="big-welcome-container">
-        <div class="welcome" >
-          
-        </div>
-      </div>
-    </div>
-    <img src="pics/enpoLogo2.png" alt="logo" class="enpoLogo">
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+}
+a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  margin: 0px ;
+}
+h3,h4{
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 21px;
+  text-transform: uppercase;
+}
+h4::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background:yellow;
+  transition: 0.4s;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+h4:hover::after{
+  width: 100%;
+  transition: width;
+}
+p{
+  text-align: justify;
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  line-height: 26px; 
+  text-indent: 30px; 
+}
+hr{
+  max-width: 720px;
+  background-color: #72aaa4;
+        width: 55%;
+        height: 2px;
+        border: 1.5px solid ;
 
-    <div class="big-department-container">
-      <div id="department" class="cont">
-        <hr>
-        <h2 id="department-title">Departments Of ENPO</h2>
-        <hr>
-        <div id="department-content">
-          <a href="#"class="dp"><div class="GE"><h3 class="dp-name">Génie Electrique</h3> </div></a>
-          <a href="#"class="dp"><div class="GS"><h3 class="dp-name">Génie Des Systèmes</h3> </div></a>
-          <a href="#"class="dp"><div class="GM"><h3 class="dp-name">Génie Mécanique</h3> </div></a>
-          <a href="#"class="dp"><div class="GI"><h3 class="dp-name">Génie Industriel</h3> </div></a>
-          <a href="#"class="dp"><div class="GP"><h3 class="dp-name">Génie Des procédés</h3> </div></a>
-          <a href="#"class="dp"><div class="GC"><h3 class="dp-name">Génie Civil</h3> </div></a>
-          <a href="#"class="dp"><div class="CPST"><h3 class="dp-name">CPST</h3> </div></a>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="big-about-container">
-      <div id="about-container" class="cont">
-        <div class="about">
-<h3>About ENPO DOCS</h3>
-            <p >Lom Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-        </div>
-        <img src="pics/about.jpg" alt="enpoLogo" class="about-pic" width="450px" height="350px">
-      </div>
-    </div>
-    <footer class="big-bot-container">
-      <div class="bot-container" >
-        <a class="footer-link" href="mailto:mahdjouroussama@gmail.com"><h2>FeedBack</h2> </a>
-        <p class="copyright">© 2021 Omega Squad</p>
-      </div>
-    </footer>
-  </div>
-  </body>
-</html>
+        padding: -20px;
+        border-radius: 30px;
+}
+.first{
+  color: white;
+  background-image: url("../pics/welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px;
+  
+}
+.big-nav-container{
+
+  display: flex;
+  justify-content: center;
+}
+.big-welcome-container{
+  padding-bottom: 50px;
+  margin-bottom: -160px;
+  display: flex;
+  justify-content: center;
+}
+.big-department-container{
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.big-about-container{
+  display: flex;
+  justify-content: center;
+}
+.big-bot-container{
+  color: white;
+      background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.cont{
+  max-width: 1440px;
+}
+.nav {
+  max-width: 1440px;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+#nav-bar-title {
+  padding: 5px;
+  margin: 5px;
+}
+
+.navigation-bar {
+  margin: 3px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-text{
+  margin: 5px;
+  padding: 2px;
+}
+.navigation-items:hover {
+  background-color: white;
+  color: black;
+  opacity: 0.7;
+}
+
+.navigation-items {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.welcome {
+  max-width: 1440px;
+  padding: 18%;
+}
+
+.welcome-title {
+  color: white;
+  margin: 0px;
+  font-size: 400%;
+}
+
+.enpoLogo
+{
+  margin: 5px;
+  border:  3px solid black;
+  border-radius: 180px;
+  width: 300px;
+  height: 300px;
+}
+.about-pic{
+    margin: 5px;  
+    border-radius: 30px;
+}
+
+#about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about {
+  width: 40%;
+}
+
+#department-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.GE {
+  background-image: url("../pics/GE.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+border-radius: 30px
+
+}
+
+.GS {
+
+  background-image: url("../pics/SI.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+border-radius: 30px
+}
+
+.GM {
+  background-image: url("../pics/GM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px
+}
+
+.GI {
+
+  background-image: url("../pics/GI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+border-radius: 30px
+}
+
+.GP {
+
+  background-image: url("../pics/GP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px
+}
+
+.GC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-image: url("../pics/GC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 35% 5% 0% 6%;
+  border: 2.5px solid;
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+}
+
+.CPST {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-image: url("../pics/CPST.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid;
+  height: 200px;
+  width: 300px;
+  margin: 35% 5% 0% 6%;
+  border-radius: 30px
+}
+
+.dp {
+  margin: 3% 3% 3% 3%;
+  background-color: #72aaa4;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  transition: 1s;
+}
+.dp:hover{
+  transform: scale(1.1);
+}
+.dp-name{
+  margin: 0% 5% 110% 5% ;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+.dp-name::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background:black;
+  transition: 0.4s;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.dp-name:hover::after{
+  width: 100%;
+  transition: width;
+}
+.footer-link {
+  margin: 5px 15px 5px 15px;
+}
+
+.copyright {
+  padding-bottom: 10px;
+  margin-block-end: 0px;
+}
+
+.bot-container {
+  max-width: 1440px;
+}
